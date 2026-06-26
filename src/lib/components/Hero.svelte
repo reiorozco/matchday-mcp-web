@@ -71,12 +71,12 @@
 			<div class="reveal mt-9 flex flex-wrap items-center gap-3">
 				<a
 					href="#demo"
-					class="rounded-xl bg-primary px-5 py-3 font-semibold text-white shadow-lg shadow-primary/30 transition-transform hover:-translate-y-0.5"
+					class="inline-flex items-center justify-center rounded-xl bg-primary px-5 py-3 font-semibold text-white shadow-lg shadow-primary/30 transition-transform duration-200 ease-out hover:-translate-y-0.5 active:translate-y-0"
 					>Try the live demo</a
 				>
 				<a
 					href="#install"
-					class="rounded-xl border border-night-border px-5 py-3 font-semibold text-night-ink transition-colors hover:bg-white/5"
+					class="inline-flex items-center justify-center rounded-xl border border-night-border px-5 py-3 font-semibold text-night-ink transition-colors hover:bg-white/5"
 					>Install in Claude</a
 				>
 			</div>

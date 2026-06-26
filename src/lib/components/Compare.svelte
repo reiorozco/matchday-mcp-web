@@ -48,7 +48,7 @@
 		/>
 		<button
 			type="submit"
-			class="rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
+			class="rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-white transition-transform duration-200 ease-out hover:-translate-y-0.5 active:translate-y-0"
 			>Compare</button
 		>
 	</form>
