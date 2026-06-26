@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+
+@theme {
+	/* Light dashboard surfaces */
+	--color-bg: oklch(1 0 0);
+	--color-surface: oklch(0.985 0.004 268);
+	--color-surface-2: oklch(0.955 0.006 268);
+	--color-border: oklch(0.9 0.008 268);
+	--color-ink: oklch(0.22 0.03 268);
+	--color-muted: oklch(0.46 0.025 268);
+
+	/* Indigo brand */
+	--color-primary: oklch(0.52 0.19 268);
+	--color-primary-strong: oklch(0.45 0.2 268);
+	--color-primary-soft: oklch(0.95 0.03 268);
+	--color-accent: oklch(0.7 0.16 215);
+
+	/* Functional W / D / L */
+	--color-win: oklch(0.58 0.15 150);
+	--color-draw: oklch(0.6 0.03 268);
+	--color-loss: oklch(0.57 0.21 22);
+
+	/* Dark "floodlit" hero */
+	--color-night: oklch(0.17 0.035 268);
+	--color-night-2: oklch(0.23 0.06 268);
+	--color-night-ink: oklch(0.97 0.012 268);
+	--color-night-muted: oklch(0.74 0.035 268);
+	--color-night-border: oklch(0.34 0.05 268);
+
+	--font-display: 'Archivo Expanded', 'Archivo', system-ui, sans-serif;
+	--font-sans: 'Archivo', system-ui, sans-serif;
+	--font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+	--ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+	html {
+		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizeLegibility;
+		scroll-behavior: smooth;
+	}
+
+	body {
+		background: var(--color-bg);
+		color: var(--color-ink);
+		font-family: var(--font-sans);
+	}
+
+	::selection {
+		background: var(--color-primary);
+		color: white;
+	}
+
+	:focus-visible {
+		outline: 2px solid var(--color-primary);
+		outline-offset: 2px;
+		border-radius: 2px;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+	}
+}
+
+/* Display type: wide, sporty, jersey-like */
+.font-display {
+	font-family: var(--font-display);
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	text-wrap: balance;
+}
